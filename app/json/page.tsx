@@ -1,4 +1,4 @@
-import json from '../json.json'
-export default function Home() {
+export default async function Home() {
+  const json = await import('../json.json')
   return <p>{JSON.stringify(json)}</p>
 }
